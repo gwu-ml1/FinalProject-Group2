@@ -2,6 +2,8 @@
 
 ## Dataset
 
+The dataset is included in csv form as part of the gi
+
 ## Deadlines
 
  * 7/25/19: Group Proposal
