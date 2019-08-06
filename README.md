@@ -1,8 +1,9 @@
 # Indian Premier League Predictions
 
-## Dataset
+## Data
 
-The dataset is included in csv form as part of the gi
+The dataset is included in csv format in the Data/ folder. It was provided by
+kaggle at https://www.kaggle.com/imrankhan17/t20matches.
 
 ## Deadlines
 
