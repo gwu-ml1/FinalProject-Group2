@@ -47,7 +47,7 @@ def dropCols(df):
     # drop columns not available at the end of the 1st inning
     df.drop(['winner', 'win_by_runs', 'win_by_wickets', 'balls_remaining',
              'innings2_runs', 'innings2_wickets', 'innings2_overs_batted',
-             'D/L_method'], axis=1, inplace=True)
+             'D/L_method', 'innings2_overs'], axis=1, inplace=True)
 
 # this code originally provided by Vibhu.
 # It was since modified as we went along.
