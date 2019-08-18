@@ -40,6 +40,7 @@ def svm(X_train, y_train):
         param_grid={
             'kernel': ['linear', 'poly', 'rbf', 'sigmoid']
         },
+        n_jobs=-1,
         cv=5,
         scoring=make_scorer(cohen_kappa_score)
     )

@@ -3,7 +3,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import BernoulliNB, GaussianNB
 from sklearn.metrics import cohen_kappa_score, accuracy_score
 
 #TODO: This isn't working yet...
@@ -18,21 +18,24 @@ def naiveBayes(X_train, y_train):
     #   categorical inputs, then we'll tie this into a logistic regression model using an elasticnet penalty function.
     #   Ultimately this means we'll be able to figure out the appropriate hyperparameter p for the elasticnet penalty.
     numeric_features = ['date', 'innings1_runs', 'innings1_wickets', 'innings1_overs', 'innings1_balls_bowled']
-    numeric_transformer = Pipeline(steps=[
-        ('imputer', SimpleImputer(strategy='median')), #TODO: median imputation make sense here?
-        ('scaler', StandardScaler())])
 
     categorical_features = ['venue', 'round', 'home', 'away', 'innings1', 'innings2']
     categorical_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
         ('onehot', OneHotEncoder(handle_unknown='ignore'))])
 
+    # Notice we're dropping numeric features entirely... I've doubts that this will perform well.
+    # TODO: is there a mechanism for combining a GaussianNB on numberic features, and BernoulliNB on
+    #   categorical one-hot encoded? sklearn does have some sort of ensemble models... interesting.
+    #   as currently setup we get about .57 accuracy, and cohen's kappa of .16... so barely better
+    #   than NullAccuracy rate ~52%. May imply that the categorical variables aren't a widely useful
+    #   contributor.
     preprocessor = ColumnTransformer(
         transformers=[
-            ('num', numeric_transformer, numeric_features),
+            ('num',  'drop', numeric_features),
             ('cat', categorical_transformer, categorical_features)])
 
-    nbmodel = MultinomialNB()
+    nbmodel = BernoulliNB()
 
     clf = Pipeline(steps=[
         ('preprocessor', preprocessor),

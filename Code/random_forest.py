@@ -35,13 +35,13 @@ def randomForestModel(X_train, y_train):
     ranForModel = GridSearchCV(
         estimator=RandomForestClassifier(
             random_state=42,
-            n_jobs=4
+            n_jobs=-1
         ),
         param_grid={
             'n_estimators': [10, 100, 200, 500],
             'max_depth': [25, 50, 100],
         },
-        n_jobs=2,
+        n_jobs=1,
         cv=5,
         scoring=make_scorer(cohen_kappa_score)
     )

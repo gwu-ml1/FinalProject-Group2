@@ -16,6 +16,8 @@ def load_cleaned(dir = data_folder):
                 df.innings2, ignore_index=True),
             ignore_index=True),
         ignore_index=True).dropna().unique()
+    #  340
+    print("total number of teams:", teams.shape)
     teams_catDType = CategoricalDtype(categories=teams, ordered=False)
     df['home'] = df.home.astype(teams_catDType)
     df['away'] = df.away.astype(teams_catDType)
@@ -27,6 +29,7 @@ def load_cleaned(dir = data_folder):
 
     # may want to drop round... let's try and do categorical though?
     df['round'] = df['round'].astype('category')
+    print("entries in round:", df['round'].unique().shape)
 
     # date as date type
     df['date'] = pd.to_datetime(df['date'])

@@ -14,8 +14,8 @@ def get_matches(directory=data_folder):
 #   some quick testing... seems find. need to clean data a bit first.
 def oversToBallsBowled(overs):
     from math import floor
-    runsPerOver = 6
-    return floor(overs)*runsPerOver + (overs-floor(runsPerOver))*10
+    pitchesPerOver = 6
+    return floor(overs)*pitchesPerOver + (overs-floor(overs))*10
 
 
 # function to drop abandoned matches
@@ -84,6 +84,6 @@ def clean_matches(df=get_matches()):
     df.drop('innings1_overs_batted', axis=1, inplace=True)
     return df
 
-
-df = clean_matches()
-df.to_csv(os.path.join(data_folder, 'cleaned.csv'))
+if __name__ == '__main__':
+    df = clean_matches()
+    df.to_csv(os.path.join(data_folder, 'cleaned.csv'))

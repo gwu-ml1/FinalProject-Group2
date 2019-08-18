@@ -4,9 +4,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import cohen_kappa_score, make_scorer, accuracy_score
+from scipy.stats import randint as sp_randint
 
 def knnClassifier(X_train, y_train):
 
@@ -32,16 +33,18 @@ def knnClassifier(X_train, y_train):
             ('num', numeric_transformer, numeric_features),
             ('cat', categorical_transformer, categorical_features)])
 
-    knnModel = GridSearchCV(
+    knnModel = RandomizedSearchCV(
         estimator=KNeighborsClassifier(
-            n_jobs=-1
+            n_jobs=1
         ),
-        param_grid={
-            'n_neighbors': [2, 3, 5, 7]
+        param_distributions={
+            'n_neighbors': sp_randint(100, 500)
         },
+        n_iter=200,
         n_jobs=-1,
         cv=5,
-        scoring=make_scorer(cohen_kappa_score)
+        scoring=make_scorer(cohen_kappa_score),
+        random_state=42
     )
 
     clf = Pipeline(steps=[
