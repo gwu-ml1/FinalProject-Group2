@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from joblib import load
 from os import path
 
-data_folder = "../Data" #path should work so long as code is executed from Code directory
+data_folder = path.join('..', 'Data')  # path should work so long as code is executed from Code directory
 
 
 def load_cleaned(dir=data_folder):
