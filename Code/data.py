@@ -79,7 +79,7 @@ def clean_matches(df=get_matches()):
     print("\tdataset dimensions:", size2)
     print("\tNumber of features reduced by: ", percentReduced(size0, size2, axis=1), "percent.")
 
-    # transform innings1_overs_batted to innings1_balls_bowled? TODO: verify terminology with Vibhu
+    # transform innings1_overs_batted to innings1_balls_bowled?
     df['innings1_balls_bowled'] = df['innings1_overs_batted'].apply(oversToBallsBowled)
     df.drop('innings1_overs_batted', axis=1, inplace=True)
     return df

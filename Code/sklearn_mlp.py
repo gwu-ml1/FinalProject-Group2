@@ -13,10 +13,6 @@ def mlp(X_train, y_train):
     # Code below heavily inspired by sklearn documentation, in particular:
     # https://scikit-learn.org/stable/auto_examples/compose/plot_column_transformer_mixed_types.html#sphx-glr-auto-examples-compose-plot-column-transformer-mixed-types-py
     # building ingest pipeline using sklearn
-    #
-    # using the docs as an example we'll setup a pipeline for scaling our numerical inputs, and onehotencoding our
-    #   categorical inputs, then we'll tie this into a logistic regression model using an elasticnet penalty function.
-    #   Ultimately this means we'll be able to figure out the appropriate hyperparameter p for the elasticnet penalty.
     numeric_features = ['date', 'innings1_runs', 'innings1_wickets', 'innings1_overs', 'innings1_balls_bowled']
     numeric_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='median')), #TODO: median imputation make sense here?

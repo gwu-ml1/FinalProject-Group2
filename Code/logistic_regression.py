@@ -16,6 +16,8 @@ def logRegModel(X_train, y_train):
     # using the docs as an example we'll setup a pipeline for scaling our numerical inputs, and onehotencoding our
     #   categorical inputs, then we'll tie this into a logistic regression model using an elasticnet penalty function.
     #   Ultimately this means we'll be able to figure out the appropriate hyperparameter p for the elasticnet penalty.
+    #   Update: due to convergence issues caused by degrees of freedom concerns, we ended up using lasso regression
+    #     more details in comments below.
     numeric_features = ['date', 'innings1_runs', 'innings1_wickets', 'innings1_overs', 'innings1_balls_bowled']
     numeric_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='median')), #TODO: median imputation make sense here?
