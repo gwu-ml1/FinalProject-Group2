@@ -1,32 +1,24 @@
-from common_utils import load_cleaned, data_folder
+from common_utils import load_cleaned, data_folder, load_trained_models
 from os import path
-from sklearn.model_selection import GridSearchCV
+from os.path import join
+from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model.logistic import LogisticRegressionCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import SVC
 from sklearn.metrics import cohen_kappa_score, \
-    make_scorer, classification_report, accuracy_score
-from joblib import load, dump
+    make_scorer, classification_report, accuracy_score, confusion_matrix, \
+    roc_curve, auc
+from joblib import dump
 import pandas as pd
-
-# Now I'm attempting to find 1 'ring' to rule them all.
-#  by binding them... in the darkness... lol
-def filepath(filename):
-    return path.join(data_folder, 'persisted_models', filename)
+import matplotlib.pyplot as plt
+from scipy.stats import randint as sp_randint
 
 
 def constructFeatures(X_train, X_test):
     # load pre-trained models
-    classifiers = [
-        ('bayes', load(filepath('bernoulliBayes.joblib'))),
-        ('knn', load(filepath('knn.joblib'))),
-        ('logReg', load(filepath('logReg.joblib'))),
-        ('ranFor', load(filepath('ranFor.joblib'))),
-        ('sklearn_mlp', load(filepath('sklearn_mlp.joblib'))),
-        ('svm', load(filepath('svm.joblib')))
-    ]
+    classifiers = load_trained_models()
 
     X2_train = pd.DataFrame()
     X2_test = pd.DataFrame()
@@ -37,7 +29,9 @@ def constructFeatures(X_train, X_test):
 
     return X2_train, X2_test
 
+
 myscorer = make_scorer(cohen_kappa_score)
+
 
 def randomForest():
     return GridSearchCV(
@@ -53,6 +47,7 @@ def randomForest():
         cv=5
     )
 
+
 def logReg():
     return LogisticRegressionCV(
         max_iter=200,  # doubled default max_iter value to help with convergence
@@ -67,21 +62,26 @@ def logReg():
         n_jobs=-1
     )
 
+
 def knn():
-    return GridSearchCV(
+    return RandomizedSearchCV(
         estimator=KNeighborsClassifier(
             n_jobs=-1
         ),
-        param_grid={
-            'n_neighbors': [1,2,4,8,16]
+        param_distributions={
+            'n_neighbors': sp_randint(1, 800)
         },
+        n_iter=50,
         n_jobs=1,
         cv=5,
-        scoring=myscorer
+        scoring=myscorer,
+        random_state=42
     )
+
 
 def bayes():
     return BernoulliNB()
+
 
 def svc():
     return GridSearchCV(
@@ -96,6 +96,7 @@ def svc():
         cv=5,
         scoring=myscorer
     )
+
 
 if __name__ == '__main__':
     X_train, X_test, y_train, y_test = load_cleaned()
@@ -124,5 +125,37 @@ if __name__ == '__main__':
                             'stacked',
                             model_name + '.joblib'))
         print("Model Persisting Complete:", model_name)
+        print(confusion_matrix(y_test, y_predicted))
+        if model_name in ['svm']:
+            y_predict_all = clf.decision_function(X2_test)
+        else:
+            y_predict_all = clf.predict_proba(X2_test)[:, 1]
+        plt.figure()
+        plt.title('Stacked ' + model_name + " ROC Curve")
+        fpr, tpr, _ = roc_curve(
+            y_test,
+            y_predict_all)
+
+        fpr1, tpr1, _ = roc_curve(
+            y_test,
+            y_predicted)
+
+        # print(thresholds)
+        plt.plot(fpr, tpr, color='darkorange', lw=2,
+                 label='ROC curve (area = %0.2f)' %
+                       auc(fpr, tpr))
+        plt.plot(fpr1, tpr1, color='cyan', lw=2,
+                 label='ROC curve (area = %0.2f)' %
+                       auc(fpr1, tpr1))
+        plt.plot([0, 1], [0, 1], color='navy', lw=2,
+                 linestyle='--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.legend(loc="lower right")
+        plt.savefig(join(data_folder, 'images', 'stacked_' + model_name + '.png'))
+        plt.show()
+
 
 

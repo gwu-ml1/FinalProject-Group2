@@ -51,6 +51,8 @@ def mlp(X_train, y_train):
     # Curiously, I noted that attempting to add more hidden layers of the same size, didn't help our classification
     #   at all, putting us in the range of 52%, which is roughly equivlent to the NullAccuracy rate. it also takes much
     #   longer to train on just (200,) vs (200, 200) or (200,200,200)... not sure I understand why.
+
+
     mlpModel = MLPClassifier(
             activation='logistic',
             solver='sgd',

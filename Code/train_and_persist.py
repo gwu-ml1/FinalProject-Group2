@@ -9,7 +9,7 @@ from keras_mlp import mlp as keras_mlp
 from joblib import dump
 from os import path
 
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, accuracy_score, cohen_kappa_score
 
 data_dir = '../Data'
 
@@ -20,6 +20,8 @@ def train_and_persist(X_train, y_train, X_test, y_test,
     y_predicted = pipe.predict(X_test)
     print("Model Training Complete:", model_name)
     print(classification_report(y_test, y_predicted))
+    print("\tAccuracy:", accuracy_score(y_test, y_predicted))
+    print("\tCohen Kappa:", cohen_kappa_score(y_test, y_predicted))
     print("Persisting model to disk:", model_name)
     dump(pipe, path.join(data_dir, 'persisted_models', model_name + '.joblib'))
     print("Model Persisting Complete:", model_name)

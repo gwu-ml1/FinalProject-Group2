@@ -1,18 +1,20 @@
 import pandas as pd
-from common_utils import load_cleaned
+from common_utils import load_cleaned, data_folder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.metrics import cohen_kappa_score, accuracy_score,\
-    classification_report, make_scorer
+    classification_report, make_scorer, confusion_matrix, roc_curve, auc
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras import backend
 from scipy.stats import randint as sp_randint
 from scipy.stats import uniform as sp_uniform
+import matplotlib.pyplot as plt
+from os.path import join
 
 # inspired by https://keras.io/getting-started/sequential-model-guide/
 #   and https://keras.io/scikit-learn-api/
@@ -89,7 +91,7 @@ def mlp(X_train, y_train):
             'num_neurons': sp_randint(100, 960),  # 435
         },
         n_jobs=1,
-        n_iter=10,
+        n_iter=50,
         cv=5,
         scoring=make_scorer(cohen_kappa_score),
         random_state=42
@@ -113,7 +115,39 @@ if __name__ == '__main__':
     print(classification_report(y_test, y_predict))
     print("\taccuracy:", accuracy_score(y_test, y_predict))
     print("\tcohen's kappa:", cohen_kappa_score(y_test, y_predict))
+    print(confusion_matrix(y_test, y_predict))
+    print(model.best_params_)
     # manually connected a debugger python console in pycharm,
     #   imported dump from joblib, and dumped the model contents to
-    #   disk.
+    #   disk... but they don't appear to load successfully. so instead we'll just
+    #   do everything related to this model from here:
+    y_predict_all = pipe.predict_proba(X_test)[:, 1]
+    plt.figure()
+    plt.title("keras_mlpROC Curve")
+    fpr, tpr, _ = roc_curve(
+        y_test,
+        y_predict_all)
+
+    fpr1, tpr1, _ = roc_curve(
+        y_test,
+        y_predict)
+
+    # print(thresholds)
+    plt.plot(fpr, tpr, color='darkorange', lw=2,
+             label='ROC curve (area = %0.2f)' %
+                   auc(fpr, tpr))
+    plt.plot(fpr1, tpr1, color='cyan', lw=2,
+             label='ROC curve (area = %0.2f)' %
+                   auc(fpr1, tpr1))
+    plt.plot([0, 1], [0, 1], color='navy', lw=2,
+             linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.legend(loc="lower right")
+    plt.savefig(join(data_folder, 'images', 'keras_mlp.png'))
+    plt.show()
+
+
 

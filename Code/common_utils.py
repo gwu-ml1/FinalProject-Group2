@@ -1,12 +1,14 @@
 import pandas as pd
 from pandas.api.types import CategoricalDtype
 from sklearn.model_selection import train_test_split
-import os
+from joblib import load
+from os import path
 
 data_folder = "../Data" #path should work so long as code is executed from Code directory
 
-def load_cleaned(dir = data_folder):
-    df = pd.read_csv(os.path.join(dir, "cleaned.csv"),
+
+def load_cleaned(dir=data_folder):
+    df = pd.read_csv(path.join(dir, "cleaned.csv"),
                      index_col=0)
 
     # setup common categorical dtype for teams.. then apply to all the teams features
@@ -56,6 +58,22 @@ def load_cleaned(dir = data_folder):
     X_train, X_test, y_train, y_test = train_test_split(df, target, test_size=0.3, random_state=42)
 
     return X_train, X_test, y_train, y_test
+
+
+# Now I'm attempting to find 1 'ring' to rule them all.
+#  by binding them... in the darkness... lol
+def filepath(filename):
+    return path.join(data_folder, 'persisted_models', filename)
+
+
+def load_trained_models():
+    return [('bayes', load(filepath('bernoulliBayes.joblib'))),
+            ('knn', load(filepath('knn.joblib'))),
+            ('logReg', load(filepath('logReg.joblib'))),
+            ('ranFor', load(filepath('ranFor.joblib'))),
+            ('sklearn_mlp', load(filepath('sklearn_mlp.joblib'))),
+            ('svm', load(filepath('svm.joblib')))]
+
 
 if __name__ == '__main__':
     X_train, X_test, y_train, y_test = load_cleaned()
