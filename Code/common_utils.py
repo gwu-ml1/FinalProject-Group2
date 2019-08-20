@@ -60,8 +60,6 @@ def load_cleaned(dir=data_folder):
     return X_train, X_test, y_train, y_test
 
 
-# Now I'm attempting to find 1 'ring' to rule them all.
-#  by binding them... in the darkness... lol
 def filepath(filename):
     return path.join(data_folder, 'persisted_models', filename)
 

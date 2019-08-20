@@ -74,7 +74,6 @@ def mlp(X_train, y_train):
     #   https://scikit-learn.org/stable/auto_examples/model_selection/plot_randomized_search.html#sphx-glr-auto-examples-model-selection-plot-randomized-search-py
     # setting up the GPU accelerated support from tensor-flow involved installing a number of libraries
     #   https://www.tensorflow.org/install/gpu
-    #   Note: we did not install the optional 
     mlpModel = RandomizedSearchCV(
         estimator=KerasClassifier(
             build_fn=construct_model
@@ -95,7 +94,6 @@ def mlp(X_train, y_train):
 
     clf = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        #  https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html
         ('classifier', mlpModel)
     ])
 

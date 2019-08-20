@@ -120,7 +120,9 @@ operations on the sklearn based MLP model.
 The code for our keras based MLP experiments are located in 
 `keras_mlp.py`. We used sklearn's `RandomizedSearchCV` class to 
 search for the best settings for several hyperparameters, though 
-admittedly many others could have been added. 
-Included Hyperparamerters:
-
+admittedly many others could have been added. Learning how easy it 
+was (relatively speaking) to utilize sklearn both tools, and 
+keras-based (tensorflow backed) models was a fairly eye opening 
+experience... which is tempting me to go out and buy a better graphics
+card. :D
 

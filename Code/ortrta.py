@@ -16,6 +16,9 @@ import matplotlib.pyplot as plt
 from scipy.stats import randint as sp_randint
 
 
+# Now I'm attempting to find 1 'ring' to rule them all.
+#  by binding them... in the darkness... lol
+
 def constructFeatures(X_train, X_test):
     # load pre-trained models
     classifiers = load_trained_models()

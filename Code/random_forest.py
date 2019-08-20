@@ -44,7 +44,6 @@ def randomForestModel(X_train, y_train):
 
     clf = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        #  https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html
         ('classifier', ranForModel)
     ])
 
