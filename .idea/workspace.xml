@@ -8,21 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7698f4-0369-44ff-9a8c-ce6859d6f2c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Code/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/common_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/common_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/eda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/keras_mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/keras_mlp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/ortrta.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/ortrta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/sklearn_mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/sklearn_mlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/train_and_persist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/train_and_persist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/random_forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/images/sklearn_mlp.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/images/sklearn_mlp.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/persisted_models/knn.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/knn.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/logReg.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/logReg.joblib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/persisted_models/ranFor.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/ranFor.joblib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/persisted_models/sklearn_mlp.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/sklearn_mlp.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/stacked/bernoulliBayes.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/stacked/bernoulliBayes.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/stacked/knn.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/stacked/knn.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/stacked/logReg.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/stacked/logReg.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/stacked/ranFor.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/stacked/ranFor.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/stacked/svm.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/stacked/svm.joblib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/persisted_models/svm.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/svm.joblib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="123" column="6" lean-forward="true" selection-start-line="123" selection-end-line="150" />
+            <state relative-caret-position="88">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -45,11 +39,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-591">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+            <state relative-caret-position="154">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -60,44 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/train_and_persist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="660">
               <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/knn_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/naive_bayes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -108,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/eda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="89" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="89" />
+            <state relative-caret-position="-101">
+              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -118,10 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/sklearn_mlp.py">
+        <entry file="file://$PROJECT_DIR$/Code/random_forest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
+            <state relative-caret-position="594">
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -130,22 +112,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/random_forest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/Code/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="801">
+                <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/svm_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+            <state relative-caret-position="132">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -186,35 +173,35 @@
         <option value="$USER_HOME$/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/logistic.py" />
         <option value="$PROJECT_DIR$/naive_bayes.py" />
         <option value="$PROJECT_DIR$/Code/driver.py" />
-        <option value="$PROJECT_DIR$/Code/random_forest.py" />
-        <option value="$PROJECT_DIR$/Code/naive_bayes.py" />
-        <option value="$PROJECT_DIR$/Code/svm_classifier.py" />
         <option value="$PROJECT_DIR$/stacked_data_builder.py" />
         <option value="$PROJECT_DIR$/Code/stacked_data_builder.py" />
-        <option value="$PROJECT_DIR$/Code/logistic_regression.py" />
+        <option value="$PROJECT_DIR$/Code/train_and_persist.py" />
         <option value="$PROJECT_DIR$/Code/data.py" />
+        <option value="$PROJECT_DIR$/Code/eda.py" />
+        <option value="$PROJECT_DIR$/Code/logistic_regression.py" />
+        <option value="$PROJECT_DIR$/Code/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/Code/sklearn_mlp.py" />
+        <option value="$PROJECT_DIR$/Code/svm_classifier.py" />
         <option value="$PROJECT_DIR$/Code/knn_classifier.py" />
+        <option value="$PROJECT_DIR$/Code/random_forest.py" />
         <option value="$PROJECT_DIR$/Code/README.md" />
         <option value="$PROJECT_DIR$/Code/common_utils.py" />
-        <option value="$PROJECT_DIR$/Code/train_and_persist.py" />
-        <option value="$PROJECT_DIR$/Code/eda.py" />
-        <option value="$PROJECT_DIR$/Code/sklearn_mlp.py" />
-        <option value="$PROJECT_DIR$/Code/keras_mlp.py" />
         <option value="$PROJECT_DIR$/Code/ortrta.py" />
+        <option value="$PROJECT_DIR$/Code/keras_mlp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3262" />
-    <option name="width" value="926" />
-    <option name="height" value="528" />
+    <option name="x" value="3073" />
+    <option name="y" value="26" />
+    <option name="width" value="1391" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,16 +219,11 @@
               <item name="final-project" type="462c0819:PsiDirectoryNode" />
               <item name="Data" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="final-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ortrta">
+  <component name="RunManager" selected="Python.eda">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,6 +273,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="final-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,6 +323,9 @@
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -341,25 +345,6 @@
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/ortrta.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sklearn_mlp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="final-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
@@ -369,7 +354,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/sklearn_mlp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/ortrta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,19 +383,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.sklearn_mlp" />
       <item itemvalue="Python.keras_mlp" />
       <item itemvalue="Python.ortrta" />
       <item itemvalue="Python.eda" />
       <item itemvalue="Python.train_and_persist" />
+      <item itemvalue="Python.data" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ortrta" />
         <item itemvalue="Python.eda" />
-        <item itemvalue="Python.keras_mlp" />
         <item itemvalue="Python.train_and_persist" />
-        <item itemvalue="Python.sklearn_mlp" />
+        <item itemvalue="Python.data" />
+        <item itemvalue="Python.ortrta" />
+        <item itemvalue="Python.keras_mlp" />
       </list>
     </recent_temporary>
   </component>
@@ -433,16 +418,19 @@
       <workItem from="1566055541676" duration="13425000" />
       <workItem from="1566178161468" duration="6820000" />
       <workItem from="1566228366066" duration="12605000" />
+      <workItem from="1566250677274" duration="6631000" />
+      <workItem from="1566262740010" duration="6634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92343000" />
+    <option name="totallyTimeSpent" value="105608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="-2" width="1920" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17716116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23585913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -453,16 +441,16 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970452" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.0807969" side_tool="true" weight="0.3736501" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32843652" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.9192031" visible="true" weight="0.48688352" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.9192031" visible="true" weight="0.37670514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.9386503" visible="true" weight="0.26947704" />
-      <window_info anchor="right" x="0" y="0" width="573" height="1215" id="Documentation" order="4" sideWeight="0.061349694" side_tool="true" visible="true" weight="0.26947704" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.93434346" visible="true" weight="0.14354323" />
+      <window_info anchor="right" x="0" y="0" width="573" height="1215" id="Documentation" order="4" sideWeight="0.065656565" side_tool="true" visible="true" weight="0.14354323" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
@@ -584,86 +572,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2728">
-            <caret line="124" selection-start-line="124" selection-end-line="124" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1892">
-          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/naive_bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/images/svm_code.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/svm_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/images/sklearn_mlp.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/eda.py">
+    <entry file="file://$PROJECT_DIR$/Code/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="89" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/sklearn_mlp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
+        <state relative-caret-position="173">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="30" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -672,8 +590,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/knn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="132">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/sklearn_mlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/svm_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -682,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/train_and_persist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="660">
           <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -690,32 +651,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
+    <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="123" column="6" lean-forward="true" selection-start-line="123" selection-end-line="150" />
+        <state relative-caret-position="154">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/random_forest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="594">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
+    <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-591">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/eda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="801">
+            <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
