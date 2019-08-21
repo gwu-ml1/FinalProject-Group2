@@ -8,16 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7698f4-0369-44ff-9a8c-ce6859d6f2c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Code/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/common_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/common_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/keras_mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/keras_mlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/ortrta.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/ortrta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/random_forest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/images/sklearn_mlp.png" beforeDir="false" afterPath="$PROJECT_DIR$/Data/images/sklearn_mlp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/knn.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/knn.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/ranFor.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/ranFor.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/sklearn_mlp.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/sklearn_mlp.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/persisted_models/svm.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/Data/persisted_models/svm.joblib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="396">
+              <caret line="39" column="38" lean-forward="true" selection-end-line="147" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -42,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="264">
               <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -52,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
+        <entry file="file://$PROJECT_DIR$/Code/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="1496">
+              <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="43" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -66,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="88">
               <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
@@ -78,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/train_and_persist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="418">
               <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -90,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/eda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
+            <state relative-caret-position="770">
               <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
@@ -102,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/random_forest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="814">
               <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -115,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/Code/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="801">
+              <first_editor relative-caret-position="2772">
                 <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
               </first_editor>
               <second_editor />
@@ -192,8 +182,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3073" />
-    <option name="y" value="26" />
+    <option name="x" value="298" />
+    <option name="y" value="158" />
     <option name="width" value="1391" />
     <option name="height" value="791" />
   </component>
@@ -202,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,6 +275,9 @@
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -304,6 +297,9 @@
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -367,6 +363,9 @@
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -420,17 +419,18 @@
       <workItem from="1566228366066" duration="12605000" />
       <workItem from="1566250677274" duration="6631000" />
       <workItem from="1566262740010" duration="6634000" />
+      <workItem from="1566338085359" duration="641000" />
+      <workItem from="1566341525845" duration="361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105608000" />
+    <option name="totallyTimeSpent" value="106610000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2560" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23585913" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2412839" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -445,12 +445,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.0807969" side_tool="true" weight="0.3736501" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32843652" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.9192031" visible="true" weight="0.37670514" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.9192031" visible="true" weight="0.37688985" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.93434346" visible="true" weight="0.14354323" />
-      <window_info anchor="right" x="0" y="0" width="573" height="1215" id="Documentation" order="4" sideWeight="0.065656565" side_tool="true" visible="true" weight="0.14354323" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.9306759" visible="true" weight="0.14333148" />
+      <window_info anchor="right" x="0" y="0" width="573" height="1215" id="Documentation" order="4" sideWeight="0.06932409" side_tool="true" visible="true" weight="0.14333148" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
@@ -578,16 +578,6 @@
     <entry file="file://$PROJECT_DIR$/Data/images/sklearn_mlp.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="70" column="30" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/knn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -618,22 +608,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/svm_classifier.py">
+    <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="1210">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="39" column="38" lean-forward="true" selection-end-line="147" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="264">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -641,9 +638,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Code/train_and_persist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="418">
           <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -651,10 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/ortrta.py">
+    <entry file="file://$PROJECT_DIR$/Code/eda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="770">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
           </folding>
@@ -663,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/random_forest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="814">
           <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -671,40 +688,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/common_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/eda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="801">
+          <first_editor relative-caret-position="2772">
             <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/keras_mlp.py">
+    <entry file="file://$PROJECT_DIR$/Code/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/svm_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="132">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
